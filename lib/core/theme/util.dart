@@ -1,4 +1,4 @@
-import 'package:language_learning_overlay/core/theme_data/theme.dart';
+import 'package:language_learning_overlay/core/theme/theme.dart';
 import 'package:flutter/material.dart';
 
 Color getStateColorForElevatedButton(Set<WidgetState> states) {

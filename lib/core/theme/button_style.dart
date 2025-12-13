@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:language_learning_overlay/core/theme_data/text_style.dart';
-import 'package:language_learning_overlay/core/theme_data/theme.dart';
-import 'package:language_learning_overlay/core/theme_data/util.dart';
+import 'package:language_learning_overlay/core/theme/text_style.dart';
+import 'package:language_learning_overlay/core/theme/theme.dart';
+import 'package:language_learning_overlay/core/theme/util.dart';
 import 'package:language_learning_overlay/core/constants/size_constants.dart';
 import 'border_style.dart';
 

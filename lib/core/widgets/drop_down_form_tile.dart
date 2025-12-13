@@ -7,8 +7,8 @@ import 'package:language_learning_overlay/core/extensions/string_extensions.dart
 import 'package:language_learning_overlay/core/widgets/app_text.dart';
 
 import '../../../core/constants/size_constants.dart';
-import '../../../core/theme_data/text_style.dart';
-import '../theme_data/border_style.dart';
+import '../../../core/theme/text_style.dart';
+import '../theme/border_style.dart';
 
 class DropDownFormTile<T> extends StatefulWidget {
   final List<T> dropDownItems;

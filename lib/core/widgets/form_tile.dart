@@ -1,14 +1,14 @@
 import 'package:language_learning_overlay/core/constants/size_constants.dart';
 import 'package:language_learning_overlay/core/extensions/boolean_extensions.dart';
 import 'package:language_learning_overlay/core/extensions/string_extensions.dart';
-import 'package:language_learning_overlay/core/theme_data/border_style.dart';
+import 'package:language_learning_overlay/core/theme/border_style.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:language_learning_overlay/core/utils/date_formatter.dart';
 
 import '../constants/pattern_constants.dart';
 import '../constants/word_constants.dart';
-import '../theme_data/text_style.dart';
+import '../theme/text_style.dart';
 
 class FormTile extends StatefulWidget {
   final String? title;

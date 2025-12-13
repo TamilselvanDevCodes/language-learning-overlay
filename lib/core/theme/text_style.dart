@@ -1,5 +1,5 @@
 import 'package:language_learning_overlay/core/constants/size_constants.dart';
-import 'package:language_learning_overlay/core/theme_data/theme.dart';
+import 'package:language_learning_overlay/core/theme/theme.dart';
 import 'package:flutter/material.dart';
 
 sealed class MyTextStyle {

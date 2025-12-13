@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:language_learning_overlay/core/constants/color_constants.dart';
 import 'package:language_learning_overlay/core/constants/size_constants.dart';
-import 'package:language_learning_overlay/core/theme_data/style_constant.dart';
+import 'package:language_learning_overlay/core/theme/style_constant.dart';
 
 sealed class MyBorderStyle {
   static final transparentBorder = OutlineInputBorder(

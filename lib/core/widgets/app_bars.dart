@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:language_learning_overlay/core/constants/size_constants.dart';
-import 'package:language_learning_overlay/core/theme_data/text_style.dart';
+import 'package:language_learning_overlay/core/theme/text_style.dart';
 
 import 'app_text.dart';
 

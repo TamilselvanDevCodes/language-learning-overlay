@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:language_learning_overlay/core/theme_data/text_style.dart';
+import 'package:language_learning_overlay/core/theme/text_style.dart';
 
 /// A custom replacement for the default [Text] widget.
 /// 
