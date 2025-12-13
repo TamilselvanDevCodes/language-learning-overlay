@@ -17,6 +17,11 @@ class AppRouter {
           builder: (_) => const DashboardScreen(),
           settings: settings,
         );
+        case RouteConstants.rOverlayScreen:
+        return MaterialPageRoute(
+          builder: (_) => const DashboardScreen(),
+          settings: settings,
+        );
       default:
         return MaterialPageRoute(
           builder: (_) => const ErrorScreen(),
