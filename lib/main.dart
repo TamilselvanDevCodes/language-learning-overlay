@@ -5,6 +5,7 @@ import 'package:language_learning_overlay/core/utils/global_variables.dart';
 import 'package:language_learning_overlay/routes/navigation/route_constants.dart';
 import 'package:language_learning_overlay/routes/navigation/route_navigation.dart';
 import 'package:language_learning_overlay/screens/error/error_screen.dart';
+import 'package:language_learning_overlay/screens/overflow/view/overlay_screen.dart';
 
 void main() {
   runApp(const LanguageLearningApp());
@@ -36,6 +37,6 @@ class LanguageLearningApp extends StatelessWidget {
 void overlayMain() {
   runApp(const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Material(child: Text("My overlay"))
+      home: OverlayScreen()
   ));
 }
