@@ -1,10 +1,10 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_overlay_window/flutter_overlay_window.dart';
 import 'package:language_learning_overlay/core/constants/size_constants.dart';
 import 'package:language_learning_overlay/core/constants/word_constants.dart';
 import 'package:language_learning_overlay/core/widgets/app_bars.dart';
+import 'package:language_learning_overlay/platform_service/overlay_service.dart';
 
 class DashboardScreen extends StatefulWidget {
   const DashboardScreen({super.key});
@@ -23,28 +23,11 @@ class _DashboardScreenState extends State<DashboardScreen> {
   /// Overlay permission
   Future<void> _checkPermissions() async {
     if (!Platform.isAndroid) return;
-
-    final hasPermission = await FlutterOverlayWindow.isPermissionGranted();
-    if (!hasPermission) {
-      await FlutterOverlayWindow.requestPermission();
-    }
+    await OverlayService.instance.handlePermission();
   }
 
   Future<void> _startOverlay() async {
-    final hasPermission = await FlutterOverlayWindow.isPermissionGranted();
-    if (!hasPermission) {
-      await FlutterOverlayWindow.requestPermission();
-      return;
-    }
-    await FlutterOverlayWindow.showOverlay(
-      height: 120,
-      width: 120,
-      enableDrag: true,
-      overlayTitle: "Lens Translate",
-      overlayContent: "Tap to Translate",
-      flag: OverlayFlag.defaultFlag,
-      visibility: NotificationVisibility.visibilityPublic,
-    );
+    await OverlayService.instance.showOverlay();
   }
 
   @override
