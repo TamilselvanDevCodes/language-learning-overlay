@@ -1,4 +1,4 @@
-package com.example.language_learning_overlay
+package com.example.language
 
 import io.flutter.embedding.android.FlutterActivity
 
